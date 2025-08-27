@@ -13,35 +13,6 @@ Il utilise :
   * Un backend **Python** pour l’inférence (détection/reconnaissance) et l’intégration avec MySQL.
 
 -----
-
-## Structure du projet
-
-```bash
-ANPR_PROJECT/
-├── app/                   # Application Next.js
-│   ├── api/               # Routes API (login, plaques, alertes, etc.)
-│   ├── chatbot/           # Chatbot intégré
-│   ├── components/        # Composants React (UI réutilisables)
-│   ├── plaques/           # Gestion et affichage des plaques
-│   ├── layout.js          # Layout global
-│   ├── page.js            # Page principale
-│   └── globals.css        # Styles globaux
-│
-├── backend/               # Partie traitement d’images et ANPR
-│   ├── images/            # Images d’entrée
-│   ├── output_plaques/    # Résultats des plaques détectées
-│   ├── utils/             # Fonctions utilitaires
-│   ├── yolo/              # Modèles YOLO
-│   ├── coco1.txt          # Labels classes YOLO
-│   └── main1.py           # Script principal ANPR (Python)
-│
-├── database/              # Scripts SQL pour MySQL
-├── public/                # Fichiers statiques (images, icônes, etc.)
-├── .env.local             # Variables d’environnement
-├── package.json           # Dépendances Next.js
-└── README.md              # Documentation du projet
-```
-
 -----
 
 ## Installation
@@ -49,7 +20,7 @@ ANPR_PROJECT/
 1.  **Cloner le projet**
 
     ```bash
-    git clone https://github.com/votre-nom/ANPR_PROJECT.git
+    git clone https://github.com/Hajji-ahmed/ANPR.git
     cd ANPR_PROJECT
     ```
 
@@ -65,18 +36,6 @@ ANPR_PROJECT/
 
     ```bash
     pip install -r requirements.txt
-    ```
-
-    Exemple de `requirements.txt` :
-
-    ```
-    opencv-python
-    ultralytics
-    numpy
-    pytesseract
-    pandas
-    mysql-connector-python
-    requests
     ```
 
 4.  **Base de données MySQL**
@@ -144,7 +103,7 @@ Le système détecte une voiture et en extrait la plaque. Il vérifie ensuite ce
   * **Frontend :** Next.js, React, TailwindCSS
   * **Backend :** Python (YOLOv8, OpenCV, Tesseract, MySQL)
   * **Base de données :** MySQL
-  * **OCR :** Tesseract / CRNN / TrOCR
+  * **OCR :** Tesseract / TrOCR
 
 -----
 
