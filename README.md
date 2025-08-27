@@ -42,7 +42,7 @@ Il utilise :
 
     Exécutez le script SQL suivant pour créer la base de données et les tables nécessaires :
 
-    ```sql
+    ```
  CREATE TABLE plaques (
       id SERIAL PRIMARY KEY,
       numero_plaque VARCHAR(50) UNIQUE NOT NULL,
